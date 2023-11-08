@@ -1,0 +1,131 @@
+<style>
+  
+  * { box-sizing: border-box; }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+	
+  .frame {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+  }
+  
+  .cafetera {
+    position: absolute;
+    top: 90px;
+    left: 180px;
+    width: 210px;
+    height: 300px;
+    border: 1px solid orange;
+  }
+  
+  .caf-middle {
+    
+  }
+  
+  .bustello {
+    width: 180px;
+    height: 230px;
+    background-color: yellow;
+    border: 5px solid yellow;  
+  }
+  
+  .left-can {
+    position: absolute;
+    top: 220px;
+    left: 140px;
+    z-index: 1;
+  }
+  
+  .right-can {
+    position: absolute;
+    top: 200px;
+    left: 270px;
+  }
+  
+  .cup {
+    border: 1px solid black;
+    width: 88px;
+    height: 92px;
+    background-color: white;
+    z-index: -1;
+    
+  }
+  
+  .stacked-cups {
+    position: absolute;
+    top: 320px;
+    left: 100px;
+    
+  }
+  
+  .flag-cup {
+    position: relative;
+    overflow: hidden;
+    top: 110px;
+    left: 300px;
+    z-index: 10;
+  }
+  
+  .triangle {
+    width: 50%;
+    height: 90%;
+    background-color: red;
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+    transform: translate(15%, 5%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .star {
+    background-color: white;
+    width: 45%;
+    height: 25%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 
+    50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    transform: translate(-15%, 0px);
+    
+  }
+  
+  .stripes {
+    background-image: linear-gradient(#3659ad 50%, #eef3ff 50%);
+    background-size: 100% 40%;
+    width: 90%;
+    height: 90%;
+    z-index: -1;
+  }
+  
+  .alt {
+   position: absolute;
+    top: 5%;
+    left: 10%; 
+  }
+
+</style>
+
+
+<div class="frame">
+  <div class="cafetera">
+    <div class="caf-middle"></div>
+  </div>
+  <div class="bustello left-can"></div>
+  <div class="bustello right-can"></div>
+  <div class="cup stacked-cups">
+    <div class="stripes"></div>
+  </div>
+  <div class="cup flag-cup">
+		<div class="triangle">
+      <div class="star"></div>
+    </div>
+		<div class="stripes alt"></div>
+	</div>
+</div>
