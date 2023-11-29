@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title>mars' home page</title>
+    <title>homeworld</title>
     <style>
       body {
         margin: 0;
@@ -32,7 +32,7 @@
         font-size: 30px;
       }
 
-      .directory {
+      .information {
         position: absolute;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -44,7 +44,7 @@
 
       }
 
-      .population {
+      .directory {
         position: absolute;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -56,20 +56,40 @@
 
       }
       
-      .population a {
+      .directory a {
         color: hsl(34, 29%, 36%);
       }
+
+      .demographics {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        top: 52%;
+        left: 50%;
+        color: hsl(34, 29%, 29%);
+        font-family: Pixelify Sans;
+        font-size: 16px;
+
+      }      
+      .demographics a {
+        color: hsl(34, 29%, 36%);
+      }      
+      
+      
     </style>
   </head>
   <body>
     <div class="homeworld">
       <h1>homeworld</h1>
     </div>
-    <div class="directory">
-      <h2>directory</h2>
+    <div class="information">
+      <h2>information</h2>
     </div>
-    <div class="population">
-      <a href="">population: 1</a>
+    <div class="directory">
+      <a href="#">index of citizens</a>
+    </div>
+    <div class="demographics">
+      <a href="#">demographics</a>
     </div>
 
 
