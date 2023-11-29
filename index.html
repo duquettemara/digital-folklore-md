@@ -6,51 +6,68 @@
     <style>
       body {
         margin: 0;
+        padding: 0;
         height: 100vh;
         cursor: url(arrow.cur), default;
         background-image: url(background.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
+        background-size: 550px;
+        background-position: center top;
         background-repeat: no-repeat;
+        max-width: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-
 
       @import url(https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap);
 
-      h1 {
+      .homeworld {
+        position: absolute;
+        top: 7%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         text-align: center;
-        top: 20px;
         color: hsl(34, 29%, 29%);
         font-family: Pixelify Sans;
-        font-size: 7vw;
+        font-size: 30px;    
       }
 
-      h2 {
+      .directory {
+        position: absolute;
+        transform: translate(-50%, -50%);
         text-align: center;
-        position: relative;
-        top: 250px;
+        top: 42%;
+        left: 50%;
         color: hsl(34, 29%, 29%);
         font-family: Pixelify Sans;
-        font-size: 5vw;
+        font-size: 20px;
 
       }
 
       h3 {
         text-align: center;
-        position: relative;
+        position: absolute;
+        transform: translate(-50%, -50%);
         top: 240px;
         color: hsl(34, 29%, 29%);
         font-family: Pixelify Sans;
         font-size: 3vw;
 
       }
+
     </style>
   </head>
   <body>
-    <h1>homeworld</h1>
-    <h2>directory</h2>
-    <h3>population: 1</h3>
+    <div class="homeworld">
+      <h1>homeworld</h1>
+    </div>
+    <div class="directory">
+      <h2>directory</h2>
+      <h3>population: 1</h3>
+    </div>
+
+    
+    
 
   </body>
 </html>
